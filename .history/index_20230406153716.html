@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container container-lg container-md container-sm ">
+            <div class="row head">
+                <div class="logo col-5">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="login-form col-7 ">
+                    <div class="hidden">
+                        <div>
+                            <p><input placeholder="Email" oninput="this.className = ''" name="uname"></p>
+                            <div class="email-valid ">Please enter a valid email address</div>
+                        </div>
+                        <div>
+                            <p><input placeholder="Password" oninput="this.className = ''" name="pword" type="password"></p>
+                            <div class="pass-valid"><a>Forgot your password?</a></div>
+                        </div>
+                    </div>
+                    <button class="login" onclick="openForm()">Log in</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container container-lg container-md container-sm">
+        <div class="row wrapper">
+            <div class="main-info col">
+                <h2>Starcompany designs, manufactures and</h2>
+                <p>Launches Advanced Rockets and Spacecrafts</p>
+            </div>
+            <div class="form-slide col">
+                <div class="prev-Btn">
+                    <div type="button" id="prevBtn" onclick="prevBtnOnClick()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43px" height="43px">
+                    <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.502" fill="none"
+                     d="M4.999,1.0 L36.999,1.0 C39.209,1.0 41.0,2.790 41.0,5.0 L41.0,36.999 C41.0,39.209 39.209,40.999 36.999,40.999 L4.999,40.999 C2.790,40.999 1.0,39.209 1.0,36.999 L1.0,5.0 C1.0,2.790 2.790,1.0 4.999,1.0 Z"/>
+                    <path fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)"
+                     d="M25.12,28.580 L23.580,30.12 L16.499,22.932 L16.419,23.12 L14.987,21.580 L15.67,21.499 L14.987,21.419 L16.419,19.987 L16.499,20.67 L23.580,12.987 L25.12,14.419 L17.931,21.499 L25.12,28.580 Z"/>
+                    </svg></div>
+                </div>
+                <div class="form">
+
+
+                    <form id="regForm" action="">
+                        <div class="tab">
+                            <p>Who are you?</p>
+                            <select id="profession" name="profession">
+                    <option value="eng">Engineer</option>
+                    <option value="bus">Business Development Executive</option>
+                    <option value="off">Office Manager/PA</option>
+                    <option value="acc">Accountant</option>
+                    <option value="des">VR Designer</option>
+                    </select>
+                        </div>
+                        <div id="pass" class="tab">
+                            <p>What is your age?</p>
+                            <select id="age" name="age">
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option selected value="21">21</option>
+                            <option value="22">22</option>
+                            </select>
+                        </div>
+
+                        <div id="pass1" class="tab">
+                            <p>I'm from</p>
+                            <p><input placeholder="New Roads, 70760" oninput="this.className = ''"></p>
+                        </div>
+
+
+                        <div id="pass2" class="tab">
+                            <p>Your email address</p>
+                            <p><input placeholder="Input your email" oninput="this.className = ''"></p>
+
+                        </div>
+                        <div id="pass3" class="tab">
+                            <p>Create your password</p>
+                            <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="next-Btn">
+                    <button type="button" id="nextBtn" onclick="nextBtnOnClick()">Next step<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="17px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                     d="M10.12,8.580 L8.580,10.12 L8.499,9.932 L1.419,17.12 L0.12,15.580 L7.67,8.499 L0.12,1.419 L1.419,0.12 L8.499,7.67 L8.580,6.987 L10.12,8.419 L9.931,8.499 L10.12,8.580 Z"/>
+                    </svg>
+                 </button>
+                </div>
+            </div>
+            <div id="block">
+                <div id="step-text">
+
+                </div>
+            </div>
+
+            <div class="steps">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

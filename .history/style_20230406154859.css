@@ -1,86 +1,86 @@
 .page {
-  background: url(./img/background.jpeg) rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  max-width: 100%;
-  background-position: center center;
-  background-attachment: fixed;
+    background: url(./img/background.jpeg) rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    max-width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-.page .header {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  margin: 0 auto;
+body header {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .head {
-  width: 100%;
+    width: 100%;
 }
 
 .next-Btn {
-  display: flex;
-  width: 25%;
+    display: flex;
+    width: 25%;
 }
 
 .prev-Btn {
-  display: flex;
-  width: 25%;
-  justify-content: flex-end;
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
 }
 
 .form {
-  width: 35%;
+    width: 35%;
 }
 
 .steps {
-  text-align: center;
-  margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .login {
-  background-color: transparent;
-  border: 2px solid #ffff;
-  border-radius: 4px;
-  color: #ffff;
-  font-weight: bold;
-  padding: 9px 9px;
-  z-index: 222;
-  white-space: nowrap;
-  height: fit-content;
+    background-color: transparent;
+    border: 2px solid #ffff;
+    border-radius: 4px;
+    color: #ffff;
+    font-weight: bold;
+    padding: 9px 9px;
+    z-index: 222;
+    white-space: nowrap;
+    height: fit-content;
 }
 
 .hidden p {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .hidden input {
-  text-align: left;
-  border-radius: 4px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+    text-align: left;
+    border-radius: 4px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 .login-form {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  z-index: 222;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    z-index: 222;
 }
 
 .login:hover {
-  border: 2px solid rgb(88, 102, 234);
-  background-image: -moz-linear-gradient( 61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
-  background-image: -webkit-linear-gradient( 61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
-  background-image: -ms-linear-gradient( 61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
-  box-shadow: 0px 1px 17px 0px rgba(43, 160, 234, 0.66);
+    border: 2px solid rgb(88, 102, 234);
+    background-image: -moz-linear-gradient( 61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
+    background-image: -webkit-linear-gradient( 61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
+    background-image: -ms-linear-gradient( 61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
+    box-shadow: 0px 1px 17px 0px rgba(43, 160, 234, 0.66);
 }
 
 .logo {
